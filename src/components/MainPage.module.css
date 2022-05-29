@@ -1,0 +1,139 @@
+.background {
+  background-image: url("/public/images/1.jpg");
+  background-color: #cccccc;
+  height: 400px;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+}
+
+.tag {
+  color: white;
+  font-size: 45px;
+  font-weight: 800;
+  padding: 70px 0px 10px 0px;
+  width: 700px;
+}
+
+i {
+  color: rgb(243, 178, 178);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 0px 10px 0px;
+}
+
+.add {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(185, 124, 124);
+  color: white;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.add:hover {
+  background-color: rgb(158, 95, 95);
+}
+
+/* -------------------------- */
+.list {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  box-shadow: 1px 1px 9px gray;
+  border-radius: 10px;
+  padding: 30px 0px;
+}
+
+.notice {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 15px;
+}
+.filter {
+  background-color: transparent;
+  border: 1px solid rgb(230, 224, 224);
+  width: 190px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px 20px 60px 0px;
+  font-size: 15px;
+  outline: none;
+}
+
+/* ---------------------------- */
+@media (max-width: 750px) {
+  .tag {
+    font-size: 35px;
+
+    width: 500px;
+  }
+
+  i {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 578px) {
+  .tag {
+    font-size: 30px;
+  }
+
+  i {
+    font-size: 13px;
+  }
+
+  .list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 468px) {
+  .tag {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  i {
+    font-size: 12px;
+  }
+
+  .add {
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .background {
+    height: 300px;
+  }
+}
+
+@media (max-width: 396px) {
+  .tag {
+    font-size: 24px;
+    width: 300px;
+  }
+
+  .layer {
+    padding-left: 8px;
+  }
+}

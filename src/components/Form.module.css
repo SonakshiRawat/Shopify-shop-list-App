@@ -1,0 +1,168 @@
+.background {
+  background-image: url("/public/images/4.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.layer {
+  background-color: rgb(238, 231, 231, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  height: 490px;
+  padding: 20px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.form_img {
+  width: 50%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: 2px auto;
+  border: 1px solid #888;
+  width: 50%;
+  height: 94%;
+  padding: 15px 10px 10px 10px;
+  border: none;
+}
+
+input {
+  width: 80%;
+  height: 40px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: gray;
+}
+
+.btn_add {
+  background-color: rgb(37, 117, 37);
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 0px 0px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+select {
+  height: 37px;
+  width: 130px;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  color: gray;
+}
+
+.date {
+  width: 200px;
+}
+
+b {
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  bottom: -37%;
+  left: 1%;
+  font-size: 10px;
+}
+.error2 {
+  color: red;
+  position: absolute;
+  bottom: -1rem;
+  left: 33%;
+  font-size: 10px;
+}
+label {
+  position: relative;
+}
+/* -------------- */
+@media (max-width: 910px) {
+  .modal {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 794px) {
+  .modal {
+    width: 30rem;
+    height: 450px;
+  }
+  .modal_content {
+    font-size: 15px;
+  }
+  b {
+    font-size: 16px;
+  }
+  input,
+  select {
+    height: 30px;
+  }
+  .error2 {
+    left: 3%;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal {
+    width: 350px;
+    height: 450px;
+  }
+  .modal_content {
+    background-color: rgb(238, 231, 231, 0.9);
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .error2 {
+    left: 33%;
+  }
+  .form_img {
+    display: none;
+  }
+  .layer {
+    background-color: transparent;
+  }
+  input,
+  select {
+    height: 35px;
+    background-color: transparent;
+    border-color: rgb(141, 135, 124);
+  }
+}
+
+@media (max-width: 394px) {
+  .modal {
+    width: 300px;
+    height: 490px;
+  }
+  input {
+    height: 30px;
+  }
+  .error2 {
+    left: 3%;
+  }
+}
